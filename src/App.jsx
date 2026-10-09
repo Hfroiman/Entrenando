@@ -7,7 +7,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/logueo' element={ <InicioSesion/>}/>
+        <Route path='/' element={ <InicioSesion/>}/>
       </Routes>
     </BrowserRouter>
   )
