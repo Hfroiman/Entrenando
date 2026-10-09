@@ -1,0 +1,82 @@
+.Contenedor-iniciosesion {
+    background-color: #101D30;
+}
+
+/*img*/
+.iniciosesion-img {
+    display: flex;
+    flex-direction: column;
+}
+
+.iniciosesion-img img {
+    height: 20rem;
+}
+
+/*body*/
+
+.iniciosesion-body {
+    margin: 1rem;
+}
+
+.iniciosesion-title {
+    color: #fffffe;
+}
+
+.iniciosesion-logueo {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.iniciosesion-logueo-email {
+    margin-bottom: 1rem;
+    background-color: #101d30;
+    border: 1px solid #344b68;
+    border-radius: 8px;
+    font-size:large;
+}
+.iniciosesion-logueo-contraseña{
+    background-color: #101d30;
+    border: 1px solid #344b68;
+    border-radius: 8px;
+    font-size:large;
+}
+
+
+.iniciosesion-olvidastecontraseña {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2px;
+    margin-bottom: 3rem;
+    font-size: 13px;
+}
+
+/*Inicio o continuar con google*/
+
+.iniciosesion-btnes {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.iniciosesion-iniciar {
+    background-color: #134ca1;
+    border: 1px solid #344b68;
+    border-radius: 8px;
+    font-size: larger;
+}
+
+.iniciosesion-continuar {
+    background-color: #101D30;
+    border: 1px solid #344b68;
+    border-radius: 8px;
+    font-size: large;
+    color: rgb(250, 251, 252);
+    margin-bottom: 1rem;
+}
+
+.iniciosesion-btn-registrate {
+    display: flex;
+    justify-content: center;
+    color: rgb(250, 251, 252);
+}
