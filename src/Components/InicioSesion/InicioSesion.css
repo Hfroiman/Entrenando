@@ -1,82 +1,311 @@
-.Contenedor-iniciosesion {
-    background-color: #101D30;
+
+/* ===== ESTILOS GENERALES ===== */
+
+* {
+  box-sizing: border-box;
 }
 
-/*img*/
+.Contenedor-iniciosesion {
+  min-height: 100vh;
+  width: 100%;
+  padding: 32px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(145deg, #080f1e, #101d35, #0b1425);
+  color: #f1f5f9;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===== LOGO ===== */
+
 .iniciosesion-img {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 22px;
 }
 
 .iniciosesion-img img {
-    height: 20rem;
+  width: 85px;
+  height: 85px;
+  object-fit: contain;
+  border-radius: 20px;
 }
 
-/*body*/
+/* ===== CUERPO DEL LOGIN ===== */
 
 .iniciosesion-body {
-    margin: 1rem;
+  width: 100%;
+  max-width: 430px;
+  padding: 36px;
+  background: #111c30;
+  border: 1px solid #263750;
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgb(0 0 0 / 30%);
 }
+
+/* ===== TITULO ===== */
 
 .iniciosesion-title {
-    color: #fffffe;
+  margin-bottom: 30px;
+  text-align: center;
 }
+
+.iniciosesion-title h3 {
+  margin: 0 0 12px;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.8px;
+  color: #ffffff;
+}
+
+.iniciosesion-title p {
+  margin: 0;
+  color: #9baac0;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* ===== FORMULARIO ===== */
 
 .iniciosesion-logueo {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.iniciosesion-logueo-email {
-    margin-bottom: 1rem;
-    background-color: #101d30;
-    border: 1px solid #344b68;
-    border-radius: 8px;
-    font-size:large;
-}
-.iniciosesion-logueo-contraseña{
-    background-color: #101d30;
-    border: 1px solid #344b68;
-    border-radius: 8px;
-    font-size:large;
+.iniciosesion-logueo label {
+  margin-top: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #d5dfed;
 }
 
+.iniciosesion-logueo input {
+  width: 100%;
+  min-height: 50px;
+  padding: 0 15px;
+  border: 1px solid #34445e;
+  border-radius: 12px;
+  outline: none;
+  background: #0b1425;
+  color: #ffffff;
+  font-size: 14px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.iniciosesion-logueo input::placeholder {
+  color: #718198;
+}
+
+.iniciosesion-logueo input:focus {
+  border-color: #3984ff;
+  box-shadow: 0 0 0 3px rgb(57 132 255 / 15%);
+}
+
+/* ===== RECUPERAR CONTRASEÑA ===== */
 
 .iniciosesion-olvidastecontraseña {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 2px;
-    margin-bottom: 3rem;
-    font-size: 13px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 5px 0 22px;
 }
 
-/*Inicio o continuar con google*/
-
-.iniciosesion-btnes {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+.iniciosesion-olvidastecontraseña a {
+  color: #6ba5ff;
+  font-size: 13px;
+  text-decoration: none;
 }
+
+.iniciosesion-olvidastecontraseña a:hover {
+  color: #a4c8ff;
+  text-decoration: underline;
+}
+
+/* ===== BOTON INICIAR SESION ===== */
 
 .iniciosesion-iniciar {
-    background-color: #134ca1;
-    border: 1px solid #344b68;
-    border-radius: 8px;
-    font-size: larger;
+  width: 100%;
+  min-height: 50px;
+  border: none;
+  border-radius: 12px;
+  background: #2878f0;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
 }
+
+.iniciosesion-iniciar:hover {
+  background: #1765d5;
+}
+
+.iniciosesion-iniciar:active {
+  transform: scale(0.98);
+}
+
+/* ===== SEPARADOR ===== */
+
+.iniciosesion-btnes {
+  margin-top: 22px;
+}
+
+.iniciosesion-separador {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 20px 0;
+  color: #8190a6;
+  font-size: 13px;
+}
+
+.iniciosesion-separador::before,
+.iniciosesion-separador::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #34445e;
+}
+
+/* ===== GOOGLE ===== */
 
 .iniciosesion-continuar {
-    background-color: #101D30;
-    border: 1px solid #344b68;
-    border-radius: 8px;
-    font-size: large;
-    color: rgb(250, 251, 252);
-    margin-bottom: 1rem;
+  width: 100%;
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid #34445e;
+  border-radius: 12px;
+  background: transparent;
+  color: #e5edf8;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
 }
 
+.iniciosesion-continuar:hover {
+  background: #1b2a42;
+  border-color: #6480a6;
+}
+
+.google-icon {
+  font-size: 19px;
+  font-weight: 700;
+  color: #4285f4;
+}
+
+/* ===== REGISTRO ===== */
+
 .iniciosesion-btn-registrate {
-    display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 26px;
+  font-size: 13px;
+}
+
+.iniciosesion-btn-registrate p {
+  margin: 0;
+  color: #9baac0;
+}
+
+.iniciosesion-btn-registrate a {
+  color: #6ba5ff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.iniciosesion-btn-registrate a:hover {
+  text-decoration: underline;
+}
+
+/* ===== TABLETS ===== */
+
+@media (max-width: 768px) {
+  .Contenedor-iniciosesion {
+    padding: 28px 18px;
+  }
+
+  .iniciosesion-body {
+    max-width: 410px;
+  }
+}
+
+/* ===== SMARTPHONES ===== */
+
+@media (max-width: 480px) {
+  .Contenedor-iniciosesion {
+    min-height: 100vh;
+    min-height: 100dvh;
     justify-content: center;
-    color: rgb(250, 251, 252);
+    padding: 24px 18px;
+  }
+
+  .iniciosesion-img {
+    margin-bottom: 18px;
+  }
+
+  .iniciosesion-img img {
+    width: 68px;
+    height: 68px;
+    border-radius: 16px;
+  }
+
+  .iniciosesion-body {
+    width: 100%;
+    max-width: 360px;
+    padding: 26px 20px;
+    border-radius: 20px;
+  }
+
+  .iniciosesion-title {
+    margin-bottom: 24px;
+  }
+
+  .iniciosesion-title h3 {
+    font-size: 24px;
+  }
+
+  .iniciosesion-title p {
+    font-size: 13px;
+  }
+
+  .iniciosesion-logueo input {
+    min-height: 48px;
+    font-size: 16px;
+  }
+
+  .iniciosesion-iniciar,
+  .iniciosesion-continuar {
+    min-height: 48px;
+    font-size: 14px;
+  }
+
+  .iniciosesion-btn-registrate {
+    margin-top: 24px;
+  }
+}
+
+/* ===== SMARTPHONES MUY PEQUEÑOS ===== */
+
+@media (max-width: 350px) {
+  .Contenedor-iniciosesion {
+    padding: 18px 12px;
+  }
+
+  .iniciosesion-body {
+    padding: 22px 15px;
+  }
+
+  .iniciosesion-title h3 {
+    font-size: 22px;
+  }
 }
